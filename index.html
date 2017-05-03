@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VM</title>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="code.js"></script>
+<script src="vm.js"></script>
+</head>
+
+<body>
+
+<table class="main">
+    <tr>
+    	<td class="execute"><textarea id="code"></textarea>
+        <textarea id="terminal">XX01</textarea><button id="run">RUN</button><button id="step">STEP</button></td>
+    	<td class="components">
+        <div class="scroll">
+
+
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tab-1">RM</a></li>
+                    <li><a href="#tab-2">VM 1</a></li>
+                </ul>
+                <div id="tab-1">
+                    <div class="reg">
+                        <h3>RM</h3>
+                        <span>PC</span><div id="pc">00</div><br>
+                        <span>R</span><div id="r">0000</div><br>
+                        <span>PTR</span><div id="ptr">0000</div><br>
+                        <span>MODE</span><div id="mode">1</div><br>
+                        <span>PRTR</span><div id="prtr">000</div><br>
+                        <span>TI</span><div id="ti">00</div><br>
+                        <span>C</span><div id="c">0</div><br>
+                        <span>CF</span><div id="cf">0</div><br>
+                        <span>ZF</span><div id="zf">0</div><br>
+                        <span>ERR</span><div id="err">0</div>
+                    </div>
+                </div>
+                <div id="tab-2">
+                    <div class="reg vm">
+                        <h3>VM</h3>
+                        <span>R</span><div id="rv">0000</div><br>
+                        <span>PC</span><div id="pcv">00</div><br>
+                        <span>C</span><div id="cv">0</div><br>
+                        <span>CF</span><div id="cfv">0</div><br>
+                        <span>ZF</span><div id="zfv">0</div><br>
+                        <span>NR</span><div id="nr">0</div><br>
+                        <input type="hidden" id="superid" value="1">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+		</div>
+        </td>    
+    </tr>
+</table>
+</body>
+</html>

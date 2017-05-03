@@ -1,0 +1,42 @@
+html, body { margin:0px; padding:0px; width:100%; height:100%; background-color:#eee; font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;}
+table.main { width: 100%; height:100%; border-collapse:collapse; }
+
+h3 { margin:0px;}
+
+table.main td.components { /*border:1px solid red;*/
+ width:80%;
+ vertical-align:top;}
+table.main td.execute { width:20% !important; 
+						text-align:center;
+						vertical-align: top;}
+
+textarea { width:100%; height:500px; }
+textarea#terminal { width:100%; height:150px;
+					background-color:#000;
+					color:#FFF; }
+#run, #step { font-size:30px; color:#fff; background-color:#F00; font-weight:bold; border-radius:10px; padding:10px 20px; margin-top:30px;}
+
+.scroll { overflow:auto; }
+
+.reg { width:150px; background-color:#FFF; border:1px solid #CCC; padding:15px;}
+.reg span { display:inline-block; width:50px;}
+.reg div {
+	
+	line-height:20px;
+	border:1px solid green;
+	margin:5px;
+    min-height:10px;
+	letter-spacing: 5px;
+	padding-left:5px;
+	display:inline-block; 
+	min-width:20px;
+	
+	}
+
+	
+table#ram { top:80px; right:500px; box-shadow: 10px 10px 5px #888888; }
+table#rram { top:50px; right:300px; box-shadow: 10px 10px 5px #888888; }
+table#super { top:20px; right:100px; box-shadow: 10px 10px 5px #888888; }
+table#ram, table#rram, table#super { background-color:#FFF; border:#CCC; border-collapse:collapse; position:fixed; }
+table#ram td, table#rram td, table#super td { width:20px; height:20px; vertical-align:center; text-align:center; border-bottom:1px solid #ccc;}
+table#ram td.nr, table#rram td.nr, table#super td.nr { border-right:1px solid #ccc;  }
